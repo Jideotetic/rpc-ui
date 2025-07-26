@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Nav from "./components/Nav";
 import Logo from "./components/Logo";
 import MobileNav from "./components/MobileNav";
+import Projects from "./pages/Projects";
 
 function App() {
 	return (
@@ -34,6 +35,10 @@ function App() {
 					</header>
 
 					<Home />
+					<br />
+					<br />
+					<br />
+					<Projects />
 				</div>
 			</div>
 		</div>
