@@ -2,9 +2,7 @@ import { FiFile } from "react-icons/fi";
 import Heading from "../components/Heading";
 import CreateProjectForm from "../components/CreateProjectForm";
 import ProjectsTable from "../components/ProjectTable";
-import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { FaEllipsisVertical } from "react-icons/fa6";
-import UpdateProjectForm from "@/components/UpdateProjectForm";
+import ProjectActions from "@/components/ProjectActions";
 
 const data = [
 	{
@@ -30,49 +28,7 @@ const columns = [
 	},
 	{
 		id: "actions",
-		cell: ({ row }) => {
-			const data = row.original;
-
-			return (
-				<>
-					<Menu>
-						<MenuButton className="cursor-pointer focus:outline-none">
-							<div className="p-2 bg-gray-100 rounded">
-								<FaEllipsisVertical className="text-xl" />
-							</div>
-						</MenuButton>
-						<MenuItems
-							anchor="bottom"
-							className="focus:outline-none shadow-lg rounded bg-white text-sm z-10"
-						>
-							<MenuItem className="text-gray-700 p-2 font-bold">
-								<div>Actions</div>
-							</MenuItem>
-							<hr className="border-gray-300" />
-							<MenuItem className="text-gray-700 p-2">
-								<div className="flex flex-col gap-2 items-start">
-									<button
-										className="cursor-pointer p-1 w-full hover:bg-gray-400 hover:text-white text-left rounded"
-										onClick={() =>
-											navigator.clipboard.writeText(data.projectId)
-										}
-									>
-										Copy project ID
-									</button>
-									<button className="cursor-pointer p-1 w-full hover:bg-gray-400 hover:text-white text-left rounded">
-										Toggle Dev Mode
-									</button>
-									<UpdateProjectForm />
-									<button className="bg-red-500 p-1 w-full text-white hover:bg-red-700 text-left rounded cursor-pointer">
-										Delete
-									</button>
-								</div>
-							</MenuItem>
-						</MenuItems>
-					</Menu>
-				</>
-			);
-		},
+		cell: ({ row }) => <ProjectActions project={row.original} />,
 	},
 ];
 
