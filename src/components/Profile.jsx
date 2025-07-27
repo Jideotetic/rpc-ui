@@ -19,7 +19,7 @@ export default function Profile() {
 
 						<MenuItems
 							anchor="bottom"
-							className="focus:outline-none shadow-lg w-30 rounded-xl bg-white p-4 text-sm z-50"
+							className="focus:outline-none shadow-lg rounded-xl bg-white p-3 text-sm z-50"
 						>
 							<MenuItem>
 								<div className="flex items-center gap-2">

@@ -27,17 +27,18 @@ export default function UpdateProjectForm({ open, onClose, project }) {
 						<CustomInput
 							label="Whitelisted Domain"
 							placeholder="Enter your domain name"
+							defaultValue={project.whitelist}
 						/>
 
 						<div className="flex gap-2 sm:gap-4 flex-col sm:flex-row">
 							<button
-								className="grow bg-gray-400 cursor-pointer text-white rounded p-1 text-sm"
+								className="grow bg-gray-400 cursor-pointer text-white rounded p-2 text-sm"
 								onClick={onClose}
 							>
 								Cancel
 							</button>
 							<button
-								className="grow bg-green-700 cursor-pointer text-white rounded p-1 text-sm"
+								className="grow bg-gray-900 cursor-pointer text-white rounded p-2 text-sm"
 								onClick={onClose}
 							>
 								Submit

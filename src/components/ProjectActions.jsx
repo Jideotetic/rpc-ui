@@ -1,14 +1,10 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaEllipsisVertical } from "react-icons/fa6";
 import UpdateProjectForm from "./UpdateProjectForm";
 
 export default function ProjectActions({ project }) {
 	const [showUpdate, setShowUpdate] = useState(false);
-
-	useEffect(() => {
-		console.log("showUpdate:", showUpdate);
-	}, [showUpdate]);
 
 	return (
 		<>

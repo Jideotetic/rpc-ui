@@ -12,7 +12,7 @@ export default function ChargingModel() {
 					x3 projects, multi-project stats and whitelists.
 				</p>
 
-				<button className="p-1 text-sm text-gray-200 bg-green-700 rounded">
+				<button className="p-2 text-sm text-gray-200 bg-gray-900 rounded cursor-pointer">
 					Upgrade
 				</button>
 			</div>

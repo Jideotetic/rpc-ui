@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import Logo from "./components/Logo";
 import MobileNav from "./components/MobileNav";
 import Projects from "./pages/Projects";
+import Billings from "./pages/Billings";
 
 function App() {
 	return (
@@ -39,6 +40,11 @@ function App() {
 					<br />
 					<br />
 					<Projects />
+
+					<br />
+					<br />
+					<br />
+					<Billings />
 				</div>
 			</div>
 		</div>

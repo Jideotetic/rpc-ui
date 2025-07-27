@@ -17,7 +17,7 @@ export default function APICredits() {
 
 								{open ? <RxCaretUp /> : <RxCaretDown />}
 
-								<a href="" title="Pay" className="bg-green-700 rounded">
+								<a href="" title="Pay" className="bg-gray-900 rounded">
 									<GoPlus className="text-white text-xl" />
 								</a>
 							</div>

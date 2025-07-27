@@ -7,7 +7,7 @@ import Socials from "../components/Socials";
 
 export default function Home() {
 	return (
-		<div className="">
+		<div>
 			<Heading
 				title="Welcome to SoroBuild RPC"
 				subtitle="Connecting you to the world of blockchain"

@@ -2,10 +2,12 @@ import { Fragment } from "react";
 import { CloseButton } from "@headlessui/react";
 import { AiOutlineHome } from "react-icons/ai";
 import { BiFolder } from "react-icons/bi";
+import { CiMoneyBill } from "react-icons/ci";
 
 const NAV_LINKS = [
 	{ title: "Home", href: "/", icon: AiOutlineHome },
 	{ title: "Projects", href: "/projects", icon: BiFolder },
+	{ title: "Billings", href: "/billings", icon: CiMoneyBill },
 ];
 
 export default function Nav() {
